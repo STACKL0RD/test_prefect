@@ -31,4 +31,4 @@ jobs:
 
       - name: Prefect deploy
         run: | 
-          python hello_world.py
+          python prime.py
