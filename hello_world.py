@@ -11,8 +11,7 @@ def hello_world(name: str = "world", goodbye: bool = False):
 
 if __name__ == "__main__":
     hello_world.from_source(
-        source="https://github.com/STACKL0RD/test_prefect.git", 
-        entrypoint="repo_info.py:get_repo_info"
+        entrypoint="hello_world.py:hello_world"
     ).deploy(
         name="my-first-deployment", 
         work_pool_name="my-managed-pool", 
