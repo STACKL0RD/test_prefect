@@ -30,4 +30,5 @@ jobs:
           prefect cloud workspace set --workspace "${{secrets.PREFECT_WORKSPACE}}"
 
       - name: Prefect deploy
+        run: | 
           python hello_world.py
