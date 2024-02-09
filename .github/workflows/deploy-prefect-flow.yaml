@@ -32,3 +32,4 @@ jobs:
       - name: Prefect deploy
         run: | 
           python prime.py
+          prefect deployment run 'get-repo-info/my-first-deployment'
