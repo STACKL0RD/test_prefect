@@ -12,6 +12,7 @@ def hello_world(name: str = "world", goodbye: bool = False):
 
 if __name__ == "__main__":
     hello_world.from_source(
+        source="https://github.com/STACKL0RD/test_prefect.git", 
         entrypoint="hello_world_wp.py:hello_world"
     ).deploy(
         name="my-first-deployment", 
