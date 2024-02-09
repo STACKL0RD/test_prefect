@@ -32,4 +32,4 @@ jobs:
       - name: Prefect deploy
         run: | 
           python hello_world_wp.py
-          prefect deployment run 'hello_world/my-first-deployment'
+          prefect deployment run 'hello-world/my-first-deployment'
